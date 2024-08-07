@@ -15,11 +15,11 @@ USING_NS_AX;
 SafeSprite* SafeSprite::create(const std::string& filename) {
 
     auto finalFilename = filename;
-    auto content = FileUtils::getInstance()->getStringFromFile(finalFilename);
-    if (content.empty()) {
+    auto fileExist = FileUtils::getInstance()->isFileExist(finalFilename);
+    if (!fileExist) {
         finalFilename = "HelloWorld.png";
 #ifndef NDEBUG
-        AXLOG("The file %s is empty",filename.c_str());
+        AXLOG("File %s not found",filename.c_str());
 #endif
     }
 
