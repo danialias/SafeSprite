@@ -8,6 +8,8 @@ SafeSprite.h
 SafeSprite.cpp
 ```
 
-and use `#include "SafeSprite.h"` where needed. You can edit the predetermined image inside `SafeSprite.cpp`.
+and use `#include "SafeSprite.h"` where needed. 
 
 Call it with `auto mySprite = SafeSprite::create("myImage.png");`
+
+You can edit the predetermined image inside `SafeSprite.cpp`.
