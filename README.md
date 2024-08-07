@@ -1,5 +1,5 @@
 # SafeSprite for Axmol
-This alternative to `ax::Sprite` avoids a crash when the requested file is not found, showing instead a predetermined image (`HelloWorld.png` by defult).
+This alternative to `ax::Sprite` avoids a crash when the requested file is not found, showing instead a predetermined image (`HelloWorld.png` by default).
 
 Include the following files in your `Source` folder:
 
